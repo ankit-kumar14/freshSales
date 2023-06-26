@@ -36,8 +36,8 @@ app.post("/createContact", async (req, res) => {
     } else if (data_store === "DATABASE") {
       const connection = mysql.createConnection({
         host: "localhost",
-        user: "your_mysql_username",
-        password: "your_mysql_password",
+        user: "root",
+        password: "ankit7856",
         database: "crud_app",
       });
 
@@ -84,11 +84,10 @@ app.post("/getContact", async (req, res) => {
 
       res.json(response.data);
     } else if (data_store === "DATABASE") {
-      // Retrieve contact from MySQL database
       const connection = mysql.createConnection({
         host: "localhost",
-        user: "your_mysql_username",
-        password: "your_mysql_password",
+        user: "root",
+        password: "ankit7856",
         database: "crud_app",
       });
 
@@ -136,11 +135,10 @@ app.post("/updateContact", async (req, res) => {
 
       res.json(response.data);
     } else if (data_store === "DATABASE") {
-      // Update contact in MySQL database
       const connection = mysql.createConnection({
         host: "localhost",
-        user: "your_mysql_username",
-        password: "your_mysql_password",
+        user: "root",
+        password: "ankit7856",
         database: "crud_app",
       });
 
@@ -187,11 +185,10 @@ app.post("/deleteContact", async (req, res) => {
 
       res.json(response.data);
     } else if (data_store === "DATABASE") {
-      // Delete contact from MySQL database
       const connection = mysql.createConnection({
         host: "localhost",
-        user: "your_mysql_username",
-        password: "your_mysql_password",
+        user: "root",
+        password: "ankit7856",
         database: "crud_app",
       });
 
